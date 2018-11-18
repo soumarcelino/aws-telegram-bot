@@ -1,0 +1,33 @@
+{
+  "name": "aws-telegram-bot",
+  "version": "1.0.0",
+  "description": "My personal AWS deploy tools",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "pm2 start -n AWS-TELEGRAM-BOT app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soumarcelino/aws-telegram-bot.git"
+  },
+  "keywords": [
+    "aws",
+    "telegram",
+    "bot",
+    "cli",
+    "cmd",
+    "tools"
+  ],
+  "author": "soumarcelino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soumarcelino/aws-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/soumarcelino/aws-telegram-bot#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
