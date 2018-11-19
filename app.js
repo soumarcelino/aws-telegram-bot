@@ -7,5 +7,5 @@ const gateway = Tools.gateway;
 gateway.setBot(bot)
 bot.on('message', (msg) => {
     const { text, chat : { id }, from : { username } } = msg;
-    gateway.newMessage(text,id,username)
+    gateway.newEntry(text,id,username)
 });
