@@ -1,7 +1,7 @@
 const utils = require("./../utils")
 
 const settings = {
-    "invocationMessage" : "update",
+    "invocationMessage" : "/update",
     "allowedUsers" : ["soumarcelino"]
 }
 
