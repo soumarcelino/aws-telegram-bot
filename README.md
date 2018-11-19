@@ -17,8 +17,8 @@ Add the variable **TELEGRAM_TOKEN=XXXXXXXXXXXXX**
 *Replace XXXXXXXXXXXXX with your bot token*
 
 ### Tools  
-  **test**  
-  **build**   
-  **deploy**  
+  **/start**  
+  **/update**   
+  **/cmd**  
 
 ### Creating a tool
