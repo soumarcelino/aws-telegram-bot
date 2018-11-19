@@ -6,7 +6,7 @@ class Gateway {
     moduleTranscender (text,username) {
         let modules = []
         this.modules.forEach(module => {
-            if(module.settings.invocationMessage === text && (module.settings.allowedUsers.indexOf(username) > -1)) {
+            if(text.indexOf(module.settings.invocationMessage) === 0 && (module.settings.allowedUsers.indexOf(username) > -1)) {
                 modules.push(module)
             }
         });
