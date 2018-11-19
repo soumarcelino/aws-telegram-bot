@@ -13,7 +13,7 @@ class Gateway {
         return modules
     }
 
-    newMessage(text,id,username){
+    entry(text,id,username){
         const modules = this.moduleTranscender(text,username)
         modules.forEach(module => {
             let md = new module.init(this.bot,text,id,username)
