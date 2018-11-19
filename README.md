@@ -1,6 +1,8 @@
 # aws-telegram-bot
 My personal AWS deploy tools
 
+<img src="https://image.ibb.co/bLBnjf/bot.png"/>
+
 
 ### This project provider a CLI to AWS EC2 from a Telegram bot
 
@@ -22,3 +24,4 @@ Add the variable **TELEGRAM_TOKEN=XXXXXXXXXXXXX**
   **/cmd**  
 
 ### Creating a tool
+
