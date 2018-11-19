@@ -15,7 +15,10 @@ class init {
 
     run() {
        const welcomeMessage = `
-        🤖 Hi, I'm a super bot, now i can run /update
+        🤖 Hi, I'm a super bot, now i can run 
+        /start  - View this message
+        /update - Update the bot
+        /cmd    - run a command
        `
        this.bot.sendMessage(this.id,welcomeMessage)
        
