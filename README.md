@@ -25,5 +25,3 @@ Add the variable **TELEGRAM_TOKEN=XXXXXXXXXXXXX**
 
 ### Creating a tool
 
-
-
