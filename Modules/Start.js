@@ -15,15 +15,15 @@ class init {
 
     run() {
        const welcomeMessage = `
-        <strong>🤖 Hi, I'm a super bot, now i can run</strong>
-        <pre>
-           <b>/start</b>  - <i>View this message</i>
-           <b>/update</b> - <i>Update the bot</i>
-           <b>/cmd [ command ]</b> - <i>Run some no interactive command</i>
-           <b>/deploy [ ssh addr ]</b> - <i>Deploy git project</i>
-        </pre>
+        **🤖 Hi, I'm a super bot, now i can run**
+        
+           **/start**  - __View this message__
+           **/update** - __Update the bot__
+           **/cmd [ command ]** - __Run some no interactive command__
+           **/deploy [ ssh addr ]** - __Deploy git project__
+       
        `
-       this.bot.sendMessage(this.id,welcomeMessage,{ parse_mode: 'Html' })
+       this.bot.sendMessage(this.id,welcomeMessage,{ parse_mode: 'Markdown' })
        
     }
     
