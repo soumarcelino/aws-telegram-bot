@@ -24,7 +24,7 @@ class init {
             if (err) {
                 return this.bot.sendMessage(this.id,`Error: ${err}`)
             }
-            this.bot.sendMessage(this.id,stdout);
+            this.bot.sendMessage(this.id,'```' + stdout + '```',{ parse_mode: 'Markdown' });
             if(stdout.indexOf("Already up to date") === -1){
                 this.bot.sendMessage(this.id,"Rebooting....")
                 setTimeout(()=>{
