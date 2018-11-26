@@ -15,6 +15,7 @@ class Gateway {
 
     newEntry(text,id,username){
         const modules = this.moduleTranscender(text,username)
+        if( modules.length === 0 ) this.bot.sendMessage(id,'❌ Invalid command\nType /start to list all commands🙆‍♂️')
         modules.forEach(module => {
             let md = new module.init(this.bot,text,id,username)
             md.run()
