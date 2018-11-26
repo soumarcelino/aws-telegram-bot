@@ -23,7 +23,7 @@ class init {
            <b>/deploy [ ssh addr ]</b> - <i>Deploy git project</i>
         </pre>
        `
-       this.bot.sendMessage(this.id,welcomeMessage,{ parse_mode: 'HTML' })
+       this.bot.sendMessage(this.id,welcomeMessage,{ parse_mode: 'Html' })
        
     }
     
