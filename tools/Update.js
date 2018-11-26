@@ -18,7 +18,6 @@ class init {
         🤖 Update Tool has been invoked
        `
        this.bot.sendMessage(this.id,welcomeMessage)
-       this.bot.sendMessage(this.id,"Updating....")
        
        const cmd = "git pull && git --no-pager log --decorate=short --pretty=oneline -n1"
        spawn(cmd, (err, stdout) => {
