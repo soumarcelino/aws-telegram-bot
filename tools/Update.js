@@ -26,11 +26,13 @@ class init {
                 return this.bot.sendMessage(this.id,`Error: ${err}`)
             }
             this.bot.sendMessage(this.id,stdout);
-            this.bot.sendMessage(this.id,"Rebooting....")
-            setTimeout(()=>{
-                this.bot.sendMessage(this.id,"Bye!")
-                process.exit(0)
-            },2000)
+            if(stdout.indexOf("Already up to date") === -1){
+                this.bot.sendMessage(this.id,"Rebooting....")
+                setTimeout(()=>{
+                   process.exit(0)
+                },2000)
+            }
+            
         });
        
     }
