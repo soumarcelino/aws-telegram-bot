@@ -28,7 +28,7 @@ class init {
             this.bot.sendMessage(this.id,stdout);
             this.bot.sendMessage(this.id,"Rebooting....")
             setTimeout(()=>{
-                console.log("bye")
+                this.bot.sendMessage(this.id,"Bye!")
                 process.exit(0)
             },2000)
         });
