@@ -22,7 +22,7 @@ class init {
        const cmd = `git clone ${project} ~/`
        spawn(cmd, (err, stdout) => {
             if (err) {
-                this.bot.sendMessage(this.id,`Error: ${err}`)
+                return this.bot.sendMessage(this.id,`Error: ${err}`)
             }
             this.bot.sendMessage(this.id,stdout)
         });

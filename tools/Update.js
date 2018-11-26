@@ -1,4 +1,4 @@
-const utils = require("./../utils")
+const spawn = require('child_process').exec
 
 const settings = {
     "invocationMessage" : "/update",
@@ -19,21 +19,22 @@ class init {
        `
        this.bot.sendMessage(this.id,welcomeMessage)
        this.bot.sendMessage(this.id,"Updating....")
-       this.runUpdate()
-       this.bot.sendMessage(this.id,"Rebooting....")
-       this.bot.sendMessage(this.id," 🕒 10s ")
-       setTimeout(function(){
-            console.log("bye")
-            process.exit(0)
-       },10000)
        
+       const cmd = "git pull && git --no-pager log --decorate=short --pretty=oneline -n1"
+       spawn(cmd, (err, stdout) => {
+            if (err) {
+                return this.bot.sendMessage(this.id,`Error: ${err}`)
+            }
+            this.bot.sendMessage(this.id,stdout);
+            this.bot.sendMessage(this.id,"Rebooting....")
+            setTimeout(()=>{
+                console.log("bye")
+                process.exit(0)
+            },2000)
+        });
        
     }
 
-    runUpdate(){
-        utils.git.pull()
-    }
-    
 }
 
 module.exports = {init,settings}
