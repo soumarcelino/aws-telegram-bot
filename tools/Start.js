@@ -18,7 +18,8 @@ class init {
         🤖 Hi, I'm a super bot, now i can run 
         /start  - View this message
         /update - Update the bot
-        /cmd    - run a command
+        /cmd [command]   - Run some no interactive command
+        /deploy [ssh addr] - Deploy git project
        `
        this.bot.sendMessage(this.id,welcomeMessage)
        
