@@ -2,7 +2,7 @@ const utils = require("./../utils")
 
 const settings = {
     "invocationMessage" : "/start",
-    "allowedUsers" : ["soumarcelino"]
+    "allowedUsers" : ["soumarcelino", "Isaiasdelima1"]
 }
 
 class init {
